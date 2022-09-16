@@ -4,12 +4,12 @@ agent any
 
 stages {
 
- stage('git clone') {
+ stage('git clone'){
    steps {
    
       git branch:'main',url:'https://github.com/biradar-vaishnavi/Digital.git'
-    echo " cloning the code from git repository"
-        }
+    echo "cloning the code from git repository"
+        }}
     
   stage('Build') {
   
@@ -27,7 +27,5 @@ stages {
     
     
       }
-   }
-   
    }
    
